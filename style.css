@@ -7,14 +7,35 @@
     /* Centers items vertically */
     padding: 10px;
     /* Adds some padding around the flex container */
-    background: rgb(43, 42, 42);
-    /* Background color for the flex container */
+    background-image: url(istockphoto-1174175063-640x640.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    border-radius: 15px;
+    object-fit: contain;
+    flex-wrap: wrap;
+
 }
 
 .flex-item {
     background-color: #353434;
     /* Light grey background for flex items */
     border: 1px solid #ddd;
+    /* Light grey border for flex items */
+    padding: 20px;
+    /* Adds some padding inside the flex items */
+    margin: 10px;
+    /* Adds some margin around the flex items */
+    font-size: 20px;
+    text-align: center;
+    flex-grow: 1;
+    /* Allows flex items to grow to fill available space */
+}
+
+.flex-item2 {
+    background-color: #ffffff00;
+    /* Light grey background for flex items */
+    border: 1px solid #ffffff00;
     /* Light grey border for flex items */
     padding: 20px;
     /* Adds some padding inside the flex items */
@@ -37,7 +58,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(185, 183, 180, 0.8);
+    background-color: rgba(185, 183, 180, 0.9);
     /* slightly transparent white */
     border-radius: 15px;
     /* rounded corners */

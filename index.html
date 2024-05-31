@@ -10,12 +10,30 @@
         h1 {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 60px;
-            margin-left: 35%;
+            
         }
 
         header {
-            background-color: rgb(223, 215, 205);
+            background-image: url(images\ \(1\).jpg);
             border-radius: 25px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            border-radius: 15px;
+        }
+
+        footer {
+            background-color: rgb(223, 215, 205);
+            height: 30%;
+            padding: 10px 20px;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+        }
+
+        span {
+            min-width: 0;
+            display: flex;
         }
     </style>
 </head>
@@ -26,36 +44,17 @@
         <br>
         <br>
         <br>
-
         <header>
-            <br>
-            <br>
-            <img src="me1.jpg" alt="me1" width="500" height="500" align="right" style="margin-right: 20%;">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h1>
-                About Me<span></span>
-            </h1>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
+            <div class="flex-container">
+                <div class="flex-item2">
+                    <h1 style="float: right;">
+                        About Me
+                    </h1>
+                </div>
+                <div class="flex-item2">
+                    <img src="IMG_0147.JPG" alt="me1" width="468" height="302" style="float: left;">
+                </div>
+            </div>
         </header>
         <br>
         <br>
@@ -67,22 +66,26 @@
         <nav class="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Biography</a></li>
+                <li><a href="#">Intrests</a></li>
+                <li><a href="#">Hobbies</a></li>
+                <li><a href="#">Music</a></li>
                 <br>
             </ul>
     </center>
 
     <main>
         <section id="personal-info">
-            <h2>Personal Information</h2>
-            <div>
-                <p>Name: John Doe</p>
-                <p>Age: 30</p>
-                <p>Location: City, Country</p>
+            <div class="flex-container">
+                <h2>Personal Information</h2>
+                <div>
+                    <p>Name: John Doe</p>
+                    <p>Age: 30</p>
+                    <p>Location: City, Country</p>
+                </div>
             </div>
         </section>
+
 
         <section id="hobbies">
             <h2>Hobbies</h2>
@@ -105,7 +108,9 @@
     </main>
 
     <footer>
-
+        <p>
+            n01713464@humber.ca
+        </p>
     </footer>
 
 </body>
