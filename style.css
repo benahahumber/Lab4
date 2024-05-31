@@ -1,0 +1,89 @@
+.flex-container {
+    display: flex;
+    /* Enables Flexbox */
+    justify-content: space-around;
+    /* Distributes space around items */
+    align-items: center;
+    /* Centers items vertically */
+    padding: 10px;
+    /* Adds some padding around the flex container */
+    background: rgb(43, 42, 42);
+    /* Background color for the flex container */
+}
+
+.flex-item {
+    background-color: #353434;
+    /* Light grey background for flex items */
+    border: 1px solid #ddd;
+    /* Light grey border for flex items */
+    padding: 20px;
+    /* Adds some padding inside the flex items */
+    margin: 10px;
+    /* Adds some margin around the flex items */
+    font-size: 20px;
+    text-align: center;
+    flex-grow: 1;
+    /* Allows flex items to grow to fill available space */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(Untitled-2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.navbar {
+    background-color: rgba(102, 93, 93, 0.8);
+    /* slightly transparent white */
+    border-radius: 15px;
+    /* rounded corners */
+    padding: 10px 20px;
+    position: fixed;
+    top: 2%;
+    left: 0;
+    height: 5%;
+    width: 98%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+    margin-top: 4%;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #f0efef;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 25%;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 10%;
+    padding: 5%;
+}
+
+
+section {
+    padding: 20px;
+}
