@@ -108,3 +108,61 @@ body {
 section {
     padding: 20px;
 }
+
+header {
+    background-image: url(images\ \(1\).jpg);
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: rgb(223, 215, 205);
+    height: 30%;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+}
+
+.image-container img {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+@keyframes slideInLeft{
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.heading-1 {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+    transform: translateX(-150px);
+
+}
