@@ -146,7 +146,7 @@ footer {
 
 @keyframes slideInLeft{
     from {
-        transform: translateX(-300px);
+        transform: translateX(-500px);
     }
 
     to {
@@ -156,13 +156,12 @@ footer {
 
 .heading-1 {
     animation-name: slideInLeft;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-in;
-    animation-delay: 1s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: none;
 
-    transform: translateX(-150px);
+    transform: translateX(0px);
 
 }
